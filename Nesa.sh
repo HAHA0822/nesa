@@ -123,7 +123,8 @@ function install_node() {
     if ! command -v gum &> /dev/null; then
         echo "gum 未安装，正在安装 gum。"
         # 下载安装 gum
-        curl -fsSL https://github.com/charmbracelet/gum/releases/download/v0.14.5/gum_0.14.5_linux_amd64.tar.gz | sudo tar xz -C /usr/local/bin
+        # curl -fsSL https://github.com/charmbracelet/gum/releases/download/v0.14.5/gum_0.14.5_linux_amd64.tar.gz | sudo tar xz -C /usr/local/bin
+        curl -fsSL https://github.com/charmbracelet/gum/releases/download/v0.14.5/gum_0.14.5_linux_x86_64.tar.gz | sudo tar xz -C /usr/local/bin
     else
         echo "gum 已安装。"
     fi
